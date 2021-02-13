@@ -81,8 +81,15 @@
                   </b-dropdown-item>
 
                   <div class="cart_footer">
-                    <p class="cart_total d-flex align-items-center justify-content-between"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole">$100.00</span></span></p>
-                    <p class="cart_buttons d-flex justify-content-center"><nuxt-link class="theme-button font-12 rounded view-cart" to="/cart">View Cart</nuxt-link><nuxt-link to="/checkout" class="theme-button font-12 rounded checkout">Checkout</nuxt-link></p>
+                    <p class="cart_total d-flex align-items-center justify-content-between">
+                      <strong>Subtotal:</strong>
+                      <span class="cart_price">
+                      <span class="price_symbole">$100.00</span></span>
+                    </p>
+                    <p class="cart_buttons d-flex justify-content-center">
+                      <nuxt-link class="small-button theme-button rounded view-cart" to="/cart">View Cart</nuxt-link>
+                      <nuxt-link to="/checkout" class="small-button theme-button rounded checkout">Checkout</nuxt-link>
+                    </p>
                   </div>
 
                 </div>
@@ -194,7 +201,7 @@
                         </div>
                     </b-dropdown-item>
 
-                    <b-dropdown-item @click.prevent="logout">
+                    <b-dropdown-item to="/">
                       <div class="mr-3"><i class="fas fa-sign-out-alt"></i></div>
                       <div class="media-body">
                         <p>Logout</p>
@@ -256,7 +263,7 @@
                           <li><nuxt-link to="/search-results">Left Sidebar</nuxt-link></li>
                           <li><nuxt-link to="/search-results/right-sidebar">Right Sidebar</nuxt-link></li>
                           <li><nuxt-link to="/best-sellers">No Sidebar</nuxt-link></li>
-                          <li><a>Product Details<i class="fas fa-angle-right ml-2"></i></a>
+                          <li><a href="javascript: void(0);">Product Details<i class="fas fa-angle-right ml-2"></i></a>
                             <ul class="submenu">
                               <li><nuxt-link to="/product-details">Style 1</nuxt-link></li>
                               <li><nuxt-link to="/product-details/left-thumb">Style 2</nuxt-link></li>
@@ -275,22 +282,22 @@
                           <li><nuxt-link to="/news-feed/">News Feeds</nuxt-link></li>
                           <li><nuxt-link to="/faq">FAQ</nuxt-link></li>
                           <li>
-                            <a>Account<i class="fas fa-angle-right ml-2"></i></a>
+                            <a href="javascript: void(0);">Account<i class="fas fa-angle-right ml-2"></i></a>
                             <ul class="submenu">
                               <li><nuxt-link to="/my-account">Dashboard</nuxt-link></li>
                               <li><nuxt-link to="/my-account/address-book">Address Book</nuxt-link></li>
                               <li><nuxt-link to="/cart">Cart</nuxt-link></li>
                               <li><nuxt-link to="/my-account/wishlist">Wishlist</nuxt-link></li>
                               <li><nuxt-link to="/checkout">Checkout</nuxt-link></li>
+                              <li><nuxt-link to="/compare">Compare</nuxt-link></li>
                               <li><nuxt-link to="/my-account/my-orders">My Orders</nuxt-link></li>
-                              <li><nuxt-link to="/my-account/my-orders/1">Order Tracking</nuxt-link></li>
                               <li><nuxt-link to="/my-account/my-reviews">My Reviews</nuxt-link></li>
                               <li><nuxt-link to="/my-account/wallet">Wallet Service</nuxt-link></li>
                               <li><nuxt-link to="/my-account/notifications">Notifications</nuxt-link></li>
                             </ul>  
                           </li>
                           <li>
-                            <a>Authentication<i class="fas fa-angle-right ml-2"></i></a>
+                            <a href="javascript: void(0);">Authentication<i class="fas fa-angle-right ml-2"></i></a>
                             <ul class="submenu">
                               <li><nuxt-link to="/my-account/auth/login">Login</nuxt-link></li>
                               <li><nuxt-link to="/my-account/auth/registration">Register</nuxt-link></li>
@@ -302,7 +309,7 @@
                             </ul>  
                           </li>
                           <li>
-                            <a>Merchant Account<i class="fas fa-angle-right ml-2"></i></a>
+                            <a href="javascript: void(0);">Merchant Account<i class="fas fa-angle-right ml-2"></i></a>
                             <ul class="submenu">
                               <li><nuxt-link to="/merchant-account">Dashboard</nuxt-link></li>
                               <li><nuxt-link to="/merchant-account/products">Products</nuxt-link></li>
@@ -422,8 +429,8 @@
                                     <li><nuxt-link to="/cart">Cart</nuxt-link></li>
                                     <li><nuxt-link to="/my-account/wishlist">Wishlist</nuxt-link></li>
                                     <li><nuxt-link to="/checkout">Checkout</nuxt-link></li>
+                                    <li><nuxt-link to="/compare">Compare</nuxt-link></li>
                                     <li><nuxt-link to="/my-account/my-orders">My Orders</nuxt-link></li>
-                                    <li><nuxt-link to="/my-account/my-orders/1">Order Tracking</nuxt-link></li>
                                     <li><nuxt-link to="/my-account/my-reviews">My Reviews</nuxt-link></li>
                                     <li><nuxt-link to="/my-account/wallet">Wallet Service</nuxt-link></li>
                                     <li><nuxt-link to="/my-account/notifications">Notifications</nuxt-link></li>

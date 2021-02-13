@@ -4,7 +4,6 @@
       <div class="card-body">
         <div class="top-sec d-flex justify-content-between mb-4">
           <h4 class="text-capitalize">all Orders</h4>
-          <nuxt-link to="/merchant-account/products/add-product" class="theme-button small-button rounded">add product</nuxt-link>
         </div>
         <table class="table table-responsive-sm mb-0">
           <thead>
@@ -19,13 +18,13 @@
             <tr>
               <th scope="row">#125021</th>
               <td>neck velvet dress</td>
-              <td>shipped</td>
+              <td class="text-success">shipped</td>
               <td>$205</td>
             </tr>
             <tr>
               <th scope="row">#521214</th>
               <td>belted trench coat</td>
-              <td>shipped</td>
+              <td class="text-success">shipped</td>
               <td>$350</td>
             </tr>
             <tr>
@@ -37,13 +36,13 @@
             <tr>
               <th scope="row">#245021</th>
               <td>woman print tee</td>
-              <td>shipped</td>
+              <td class="text-success">shipped</td>
               <td>$150</td>
             </tr>
             <tr>
               <th scope="row">#122141</th>
               <td>men print tee</td>
-              <td>canceled</td>
+              <td class="text-danger">canceled</td>
               <td>$150</td>
             </tr>
             <tr>
@@ -55,13 +54,13 @@
             <tr>
               <th scope="row">#245021</th>
               <td>woman print tee</td>
-              <td>shipped</td>
+              <td class="text-success">shipped</td>
               <td>$150</td>
             </tr>
             <tr>
               <th scope="row">#122141</th>
               <td>men print tee</td>
-              <td>canceled</td>
+              <td class="text-danger">canceled</td>
               <td>$150</td>
             </tr>
             <tr>

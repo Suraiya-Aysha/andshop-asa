@@ -38,12 +38,12 @@
                 <div class="single-blog mb-0">
                   <div class="blog-img">
                     <img :src='require("@/assets/images/blog/blog-details-1.jpg")' alt="Image">
-                    <span>25 <br> Jun</span>
+                    <span class="text-white">25 <br> Jun</span>
                   </div>
                   <div class="blog-content mb-3">
                     <ul class="d-flex">
-                      <li><a><i class="far fa-user"></i>By Admin</a></li>
-                      <li><a><i class="far fa-comment-alt"></i>0 comments</a></li>
+                      <li><a href="javascript: void(0);"><i class="far fa-user"></i>By Admin</a></li>
+                      <li><a href="javascript: void(0);"><i class="far fa-comment-alt"></i>0 comments</a></li>
                     </ul>
                     <h2 class="mb-4">Get Your Furniture Ready For The Summer</h2>
                     <p>
@@ -87,10 +87,10 @@
                   <div class="blog-tags mb-3">
                     <ul class="d-flex">
                       <h6 class="blog-tags-title mr-3">Tags</h6>
-                      <li><a>Fashion</a></li>
-                      <li><a>Furniture</a></li>
-                      <li><a>Bag</a></li>
-                      <li><a>Men's</a></li>
+                      <li><nuxt-link to="/fashion">Fashion</nuxt-link></li>
+                      <li><nuxt-link to="/furniture">Furniture</nuxt-link></li>
+                      <li><nuxt-link to="/fashion">Bag</nuxt-link></li>
+                      <li><nuxt-link to="/fashion">Men's</nuxt-link></li>
                     </ul>
                   </div>
 

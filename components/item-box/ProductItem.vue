@@ -4,17 +4,17 @@
       <img :src="productItem.image" alt="products" class="rounded-top">
       <div class="product_action_box w-100">
         <ul class="list_none pr_action_btn d-flex justify-content-center">
-          <li class="add-to-cart"><a href="javascript: void(0);"><b-icon icon="cart-plus-fill"></b-icon></a></li>
+          <li class="add-to-cart"><nuxt-link to="/cart"><b-icon icon="cart-plus-fill"></b-icon></nuxt-link></li>
           <li><nuxt-link to="/my-account/wishlist"><b-icon icon="heart"></b-icon></nuxt-link></li>
-          <li><nuxt-link to="/product-compare"><b-icon icon="arrow-repeat"></b-icon></nuxt-link></li>
+          <li><nuxt-link to="/compare"><b-icon icon="arrow-repeat"></b-icon></nuxt-link></li>
           <li><nuxt-link to="/product-details"><b-icon icon="eye-fill"></b-icon></nuxt-link></li>
         </ul>
       </div>
     </div>
     <div class="product-content">
       <p class="product-tags text-uppercase font-12">{{productItem.tags}}</p>
-      <p class="product-title font-bold"><nuxt-link to="/product-details">{{productItem.title}}</nuxt-link></p>
-      <div class="rating_wrap mb-1">
+      <p class="product-title font-bold mt-1"><nuxt-link to="/product-details">{{productItem.title}}</nuxt-link></p>
+      <div class="rating_wrap">
         <div class="given-rating">
           <i class="fas fa-star"></i>
           <i class="fas fa-star"></i>
